@@ -3,7 +3,7 @@ class ElementsTest extends PHPUnit_Framework_TestCase{
 
 	public function test_BasicHTML(){
 
-		$oHTML = new \Elements\Elements(new \Elements\Tags\HTML());
+		$oHTML = new \Elements\Element(new \Elements\Tags\HTML());
 
 		$this->assertEquals(
 			"<html></html>",

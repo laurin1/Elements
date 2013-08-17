@@ -3,6 +3,9 @@ namespace Elements\Abstracts;
 
 abstract class Tag{
 
+	/** @var string */
+	private $sContent;
+
 	/**
 	 * @return string
 	 */
@@ -10,11 +13,17 @@ abstract class Tag{
 
 		$sTag = strtolower(str_ireplace("elements\\tags\\", "", get_called_class()));
 
-		return "<".$sTag.">".$this->getContent()."</".$sTag.">";
+		return "<".$sTag.">".$this->sContent."</".$sTag.">";
 
 	}
 
-	public function getContent(){
+	/**
+	 * @param $sContent
+	 */
+	public function addContent($sContent){
+
+		$this->sContent = $sContent;
+
 	}
 
 }

@@ -1,6 +1,10 @@
 <?php
-$oHTML = new \Elements\Elements(new \Elements\Tags\HTML());
-$oHead = new \Elements\Elements(new \Elements\Tags\Head());
+use Elements\Element, \Elements\Tags;
+
+$oHTML = new Element(new Tags\HTML());
+$oHead = new Element(new Tags\Head());
+$oHead->addTitle("My Home Page");
+$oHTML->addContent($oHead);
 
 
 echo $oHTML->getHTML();

@@ -2,8 +2,9 @@
 namespace Elements;
 
 use Elements\Abstracts\Tag;
+use Elements\Tags\Title;
 
-class Elements{
+class Element{
 
 	/** @var string */
 	private $sHTML;
