@@ -1,14 +1,16 @@
 {
 	"name":              "laurin1/Elements",
+	"type":              "libray",
 	"description":       "Lightweight library for creating great web pages.",
 	"minimum-stability": "alpha",
+	"license":           "Apache 2.0",
 	"authors":           [
 		{
 			"name":  "Keith Davis",
 			"email": "me@laurinkeithdavis.com"
 		}
 	],
-	"require": {
+	"require-dev":       {
 		"phpunit/phpunit": "3.7.x"
 	}
 }
