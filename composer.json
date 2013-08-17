@@ -1,0 +1,14 @@
+{
+	"name":              "laurin1/Elements",
+	"description":       "Lightweight library for creating great web pages.",
+	"minimum-stability": "alpha",
+	"authors":           [
+		{
+			"name":  "Keith Davis",
+			"email": "me@laurinkeithdavis.com"
+		}
+	],
+	"require": {
+		"phpunit/phpunit": "3.7.x"
+	}
+}
