@@ -1,12 +1,17 @@
 <?php
 namespace Elements;
 
+use Elements\Elements\Element;
+
 class Elements{
 
 	/** @var string */
 	private $sHTML;
 
-	public function __construct(Elements $oElement){
+	/**
+	 * @param \Elements\Elements\Element $oElement
+	 */
+	public function __construct(Element $oElement){
 
 		$this->sHTML = $oElement->getHTML();
 

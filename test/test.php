@@ -1,3 +1,14 @@
 <?php
+$oHTMLDocument = new HTMLDocument();
 
-new \Elements\Elements(new \Elements\Elements\HTML());
+$oHTMLDocument->addHead();
+$oHTMLDocument->addTitle();
+$oHTMLDocument->addJavaScriptSourceFile();
+$oHTMLDocument->addCSSSourceFile();
+
+$oHTMLDocument->addBody();
+$oHTMLDocument->
+
+
+$oHTMLDocument->displayHTML();
+

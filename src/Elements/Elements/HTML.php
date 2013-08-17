@@ -3,6 +3,6 @@ namespace Elements\Elements;
 
 use Elements\Elements;
 
-class HTML extends Elements{
+class HTML extends Element{
 
 }
