@@ -1,7 +1,7 @@
 <?php
 namespace Elements;
 
-use Elements\Elements\Element;
+use Elements\Abstracts\Tag;
 
 class Elements{
 
@@ -9,26 +9,21 @@ class Elements{
 	private $sHTML;
 
 	/**
-	 * @param \Elements\Elements\Element $oElement
+	 * @param Tag $oTag
 	 */
-	public function __construct(Element $oElement){
+	public function __construct(Tag $oTag){
 
-		$this->sHTML = $oElement->getHTML();
+		$this->sHTML = $oTag->getHTML();
 
 	}
 
 	/**
 	 * @return string
 	 */
-	private function getHTML(){
+	public function getHTML(){
 
-		$sElement = strtolower(get_called_class());
+		return $this->sHTML;
 
-		return "<".$sElement.">".$this->getContent()."</".$sElement.">";
-
-	}
-
-	private function getContent(){
 	}
 
 }

@@ -1,6 +1,8 @@
 <?php
-namespace Elements\Elements;
+namespace Elements\Tags;
 
-class Body extends Elements{
+use Elements\Abstracts\Tag;
+
+class Body extends Tag{
 
 }

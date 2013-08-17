@@ -1,8 +1,8 @@
 <?php
-namespace Elements\Elements;
+namespace Elements\Tags;
 
-use Elements\Elements;
+use Elements\Abstracts\Tag;
 
-class HTML extends Element{
+class HTML extends Tag{
 
 }
