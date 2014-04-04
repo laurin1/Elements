@@ -1,5 +1,5 @@
 <?php
-namespace Elements\Int;
+namespace Elements\Interfaces;
 
 interface Application {
 

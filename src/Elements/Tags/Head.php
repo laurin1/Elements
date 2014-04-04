@@ -3,6 +3,6 @@ namespace Elements\Tags;
 
 use Elements\Abstracts\Tag;
 
-class Div extends Tag{
+class Head extends Tag{
 
 }
