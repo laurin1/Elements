@@ -1,29 +1,13 @@
 <?php
 namespace Elements;
 
-use Elements\Abstracts\Tag;
-use Elements\Tags\Title;
+class Element extends Elements\Abstracts\Tag{
 
-class Element{
+	public static function create($content){
 
-	/** @var string */
-	private $sHTML;
+		$element = new Element();
 
-	/**
-	 * @param Tag $oTag
-	 */
-	public function __construct(Tag $oTag){
-
-		$this->sHTML = $oTag->getHTML();
-
-	}
-
-	/**
-	 * @return string
-	 */
-	public function getHTML(){
-
-		return $this->sHTML;
+		return $element->getHTML();
 
 	}
 
